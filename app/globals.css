@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+}
+
+@theme inline {
+  --font-sans: var(--font-inter-sans);
+  --font-serif: var(--font-calistoga-seif);
+
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1200px;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding: 1rem;
+
+  @media (width >= 768px) {
+    padding: 2rem;
+  }
+}
+
+@layer base {
+  .nav-item{
+    @apply px-4 py-1.5 font-semibold text-white/70 text-sm hover:bg-white/10 text-white rounded-full transition duration-300
+  }
+} 
